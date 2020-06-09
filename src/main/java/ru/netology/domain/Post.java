@@ -11,12 +11,96 @@ private int replyPostId;
 private int copyright;
 private int signerId;
 private int postponedId;
+private String postType;
+private int canPin;
+private int canDelete;
+private int canEdit;
+private int isPinned;
+private int markedAsAds;
+private boolean isFavorite;
+private String text;
 private CommentsInfo commentsInfo;
 private LikesInfo likesInfo;
 private RepostsInfo repostsInfo;
 private viewsInfo viewsInfo;
 private PostSource postSource;
 private Geo geo;
+
+    public String getPostType() {
+        return postType;
+    }
+
+    public void setPostType(String postType) {
+        this.postType = postType;
+    }
+
+    public int getCanPin() {
+        return canPin;
+    }
+
+    public void setCanPin(int canPin) {
+        this.canPin = canPin;
+    }
+
+    public int getCanDelete() {
+        return canDelete;
+    }
+
+    public void setCanDelete(int canDelete) {
+        this.canDelete = canDelete;
+    }
+
+    public int getCanEdit() {
+        return canEdit;
+    }
+
+    public void setCanEdit(int canEdit) {
+        this.canEdit = canEdit;
+    }
+
+    public int getIsPinned() {
+        return isPinned;
+    }
+
+    public void setIsPinned(int isPinned) {
+        this.isPinned = isPinned;
+    }
+
+    public int getMarkedAsAds() {
+        return markedAsAds;
+    }
+
+    public void setMarkedAsAds(int markedAsAds) {
+        this.markedAsAds = markedAsAds;
+    }
+
+    public boolean isFavorite() {
+        return isFavorite;
+    }
+
+    public void setFavorite(boolean favorite) {
+        isFavorite = favorite;
+    }
+
+
+
+    public int getFriendsOnly() {
+        return friendsOnly;
+    }
+
+    public void setFriendsOnly(int friendsOnly) {
+        this.friendsOnly = friendsOnly;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    private int friendsOnly;
 
     public CommentsInfo getCommentsInfo() {
         return commentsInfo;
