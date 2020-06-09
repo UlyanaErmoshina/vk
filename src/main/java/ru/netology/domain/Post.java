@@ -12,11 +12,19 @@ private int copyright;
 private int signerId;
 private int postponedId;
 private String postType;
+<<<<<<< HEAD
 private boolean canPin;
 private boolean canDelete;
 private boolean canEdit;
 private boolean isPinned;
 private boolean markedAsAds;
+=======
+private int canPin;
+private int canDelete;
+private int canEdit;
+private int isPinned;
+private int markedAsAds;
+>>>>>>> 0c1f1ed3272f64d6544277cc46fd8a859303a5ad
 private boolean isFavorite;
 private String text;
 private CommentsInfo commentsInfo;
@@ -34,6 +42,7 @@ private Geo geo;
         this.postType = postType;
     }
 
+<<<<<<< HEAD
     public boolean getCanPin() {
         return canPin;
     }
@@ -71,6 +80,45 @@ private Geo geo;
     }
 
     public void setMarkedAsAds(boolean markedAsAds) {
+=======
+    public int getCanPin() {
+        return canPin;
+    }
+
+    public void setCanPin(int canPin) {
+        this.canPin = canPin;
+    }
+
+    public int getCanDelete() {
+        return canDelete;
+    }
+
+    public void setCanDelete(int canDelete) {
+        this.canDelete = canDelete;
+    }
+
+    public int getCanEdit() {
+        return canEdit;
+    }
+
+    public void setCanEdit(int canEdit) {
+        this.canEdit = canEdit;
+    }
+
+    public int getIsPinned() {
+        return isPinned;
+    }
+
+    public void setIsPinned(int isPinned) {
+        this.isPinned = isPinned;
+    }
+
+    public int getMarkedAsAds() {
+        return markedAsAds;
+    }
+
+    public void setMarkedAsAds(int markedAsAds) {
+>>>>>>> 0c1f1ed3272f64d6544277cc46fd8a859303a5ad
         this.markedAsAds = markedAsAds;
     }
 
