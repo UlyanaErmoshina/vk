@@ -23,6 +23,8 @@ private CommentsInfo commentsInfo;
 private LikesInfo likesInfo;
 private RepostsInfo repostsInfo;
 private ViewsInfo viewsInfo;
+private PostSource postSource;
+private Geo geo;
 
 
     public String getPostType() {
@@ -133,6 +135,22 @@ private ViewsInfo viewsInfo;
 
     public void setViewsInfo(ViewsInfo viewsInfo) {
         this.viewsInfo = viewsInfo;
+    }
+
+    public PostSource getPostSource() {
+        return postSource;
+    }
+
+    public void setPostSource(PostSource postSource) {
+        this.postSource = postSource;
+    }
+
+    public Geo getGeo() {
+        return geo;
+    }
+
+    public void setGeo(Geo geo) {
+        this.geo = geo;
     }
 
 
