@@ -12,27 +12,18 @@ private int copyright;
 private int signerId;
 private int postponedId;
 private String postType;
-<<<<<<< HEAD
 private boolean canPin;
 private boolean canDelete;
 private boolean canEdit;
 private boolean isPinned;
 private boolean markedAsAds;
-=======
-private int canPin;
-private int canDelete;
-private int canEdit;
-private int isPinned;
-private int markedAsAds;
->>>>>>> 0c1f1ed3272f64d6544277cc46fd8a859303a5ad
 private boolean isFavorite;
 private String text;
 private CommentsInfo commentsInfo;
 private LikesInfo likesInfo;
 private RepostsInfo repostsInfo;
-private viewsInfo viewsInfo;
-private PostSource postSource;
-private Geo geo;
+private ViewsInfo viewsInfo;
+
 
     public String getPostType() {
         return postType;
@@ -42,7 +33,6 @@ private Geo geo;
         this.postType = postType;
     }
 
-<<<<<<< HEAD
     public boolean getCanPin() {
         return canPin;
     }
@@ -75,52 +65,15 @@ private Geo geo;
         this.isPinned = isPinned;
     }
 
-    public boolean getMarkedAsAds() {
+    public boolean isMarkedAsAds() {
         return markedAsAds;
     }
 
     public void setMarkedAsAds(boolean markedAsAds) {
-=======
-    public int getCanPin() {
-        return canPin;
-    }
-
-    public void setCanPin(int canPin) {
-        this.canPin = canPin;
-    }
-
-    public int getCanDelete() {
-        return canDelete;
-    }
-
-    public void setCanDelete(int canDelete) {
-        this.canDelete = canDelete;
-    }
-
-    public int getCanEdit() {
-        return canEdit;
-    }
-
-    public void setCanEdit(int canEdit) {
-        this.canEdit = canEdit;
-    }
-
-    public int getIsPinned() {
-        return isPinned;
-    }
-
-    public void setIsPinned(int isPinned) {
-        this.isPinned = isPinned;
-    }
-
-    public int getMarkedAsAds() {
-        return markedAsAds;
-    }
-
-    public void setMarkedAsAds(int markedAsAds) {
->>>>>>> 0c1f1ed3272f64d6544277cc46fd8a859303a5ad
         this.markedAsAds = markedAsAds;
     }
+
+
 
     public boolean isFavorite() {
         return isFavorite;
@@ -174,29 +127,16 @@ private Geo geo;
         this.repostsInfo = repostsInfo;
     }
 
-    public ru.netology.domain.viewsInfo getViewsInfo() {
+    public ViewsInfo getViewsInfo() {
         return viewsInfo;
     }
 
-    public void setViewsInfo(ru.netology.domain.viewsInfo viewsInfo) {
+    public void setViewsInfo(ViewsInfo viewsInfo) {
         this.viewsInfo = viewsInfo;
     }
 
-    public PostSource getPostSource() {
-        return postSource;
-    }
 
-    public void setPostSource(PostSource postSource) {
-        this.postSource = postSource;
-    }
 
-    public Geo getGeo() {
-        return geo;
-    }
-
-    public void setGeo(Geo geo) {
-        this.geo = geo;
-    }
 
     public int getId() {
         return id;
